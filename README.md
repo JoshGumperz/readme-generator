@@ -9,7 +9,7 @@ In order to get started using the Readme Generator, you'll need to have Node ins
 
 ## Getting Started
 
-Once you've installed the necessary prerequisites, you can start using the generator. And in order to show you how to use the generator, I've included an instructional that takes you through the steps of generating your own custom README. The video will be linked below, along with a step by step explanation. 
+Once you've installed the necessary prerequisites, you can start using the generator. And in order to show you how to use the generator, I've included an instructional video that takes you through the steps of generating your own custom README. The video will be linked below, along with a step by step explanation. 
 
 
 Readme Generator Tutorial Video: https://drive.google.com/file/d/1mRlg4QoVilNs8terglqgVAiRN8ruL6Py/view?usp=sharing
@@ -57,4 +57,4 @@ This project is licensed under the MIT License
 
 ## Acknowledgments
 
-* I'd like to acknowledge my classmate, Peter Consagra for helping me through some of the trickiest roadblocks I encountered in the process of completing this assignment.  
+* I'd like to acknowledge my classmate, Peter Consagra (https://github.com/Pcon27) for helping me through some of the trickiest roadblocks I encountered in the process of completing this assignment.  
