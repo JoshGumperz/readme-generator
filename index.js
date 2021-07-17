@@ -3,7 +3,7 @@ const inquirer = require('inquirer')
 const fs = require("fs")
 const generateMarkdown = require("./utils/generateMarkdown")
 // TODO: Create an array of questions for user input
-const questions = ["Enter author name:", "Enter project name:", "Describe your project:", "How do I install the app?", "How do I use the app?", "What is the liscence for this application?", "Are there contribution guidelines?", "Enter your Github username:", "Enter your email address:"];
+const questions = ["Enter author name:", "Enter project name:", "Describe your project:", "How do I install the app?", "How do I use the app?", "What is the license for this application?", "What color do you want your license badge to be", "How could I contribute to this app?", "Enter your Github username:", "Enter your email address:"];
 
 // TODO: Create a function to initialize app
 function init() {
@@ -34,25 +34,31 @@ function init() {
                 message: questions[4],
                 name: "usage",
             },
-            // {
-            //     type: "list-input",
-            //     message: questions[5],
-            //     name: "liscence",
-            //     choices: ["MIT", "Other"]
-            // },
             {
-                type: "input",
+                type: "list",
+                message: questions[5],
+                name: "license",
+                choices: ["MIT", "ISC", "IBM", "MPL"]
+            },
+            {
+                type: "list",
                 message: questions[6],
-                name: "contribution",
+                name: "licenseColor",
+                choices: ["red", "blue", "yellow", "green"]
             },
             {
                 type: "input",
                 message: questions[7],
-                name: "github",
+                name: "contribution",
             },
             {
                 type: "input",
                 message: questions[8],
+                name: "github",
+            },
+            {
+                type: "input",
+                message: questions[9],
                 name: "email",
             },
         ])
@@ -64,6 +70,5 @@ function init() {
             )
         })
 }
-
 // Function call to initialize app
 init();
