@@ -10,11 +10,11 @@
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) =>
 `# ${data.title}
+![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-${data.licenseColor}.svg)
+
 ## Author
 ${data.name}  
 
-https://img.shields.io/badge/License-${data.license}-${data.licenseColor}.svg
-    
 # Table of Contents
 1. [description](#description)
 2. [installation](#installation)
