@@ -63,7 +63,6 @@ function init() {
             },
         ])
         .then ((data) => {
-            console.log(data)
             const readMePageContent = generateMarkdown(data)
             fs.writeFile("./Generated-READMEs/README.md", readMePageContent, (err) =>
             err ? console.log(err) : console.log("successfully created readme!")
